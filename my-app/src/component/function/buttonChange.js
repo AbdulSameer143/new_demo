@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const ButtonChange =()=>{
 
    const [Button,setButton] = useState("On");
-   const [cls, setCls] = useState("green");
+  
 //first method
 //    const Change = () => {
 //     if(Button == 'On') {
@@ -17,13 +17,13 @@ const ButtonChange =()=>{
 //second method
 const Change =()=>{
     return setButton(Button === 'On' ? "Off" : "On");
-    ChangeColor();
+  
 }
 //or
 // const Change =()=>{
 //     return setButton((Button)=>Button=='On' ? "Off" : "On")
 // }
-const ChangeColor=()=>{}
+
 
 
 

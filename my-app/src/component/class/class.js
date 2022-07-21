@@ -1,24 +1,7 @@
 import React, { Component } from "react";
 import ButtonClickClass from "./buttonClickToPrint";
-class Button extends React.Component{
-    constructor(){
-        super();
-        
-    }
-    render(){
-        return(
-            <div>
-               
-                <h3>this is button change program</h3>
-               <button >
-
-               </button>
-            </div>
-        )
-    }
-    }
-
-
+import ButtonClickToChange from "./buttonClickToChange";
+import Clock from "./date";
 
 class ClassCom extends Component {
     constructor(props) {
@@ -62,19 +45,22 @@ class ClassCom extends Component {
                     <h5>Count = {this.state.count}</h5>
                 </div>
                 <button onClick={this.Increment} type="button" className="btn btn-outline-dark btn-primary btn-sm">
-                    <h6 className="font font-italic text-light ">Increment</h6>
+                    <h6 className=" text-light ">Increment</h6>
                 </button>
                 <button onClick={this.Reset} type="button" className="btn btn-outline-dark btn-primary btn-sm">
-                    <h6 className="font font-italic text-light ">Reset</h6>
+                    <h6 className=" text-light ">Reset</h6>
                 </button>
                 <button onClick={this.Decrement.bind(this)} type="button" className="btn btn-outline-dark btn-primary btn-sm">
-                    <h6 className="font font-italic text-light ">Decrement</h6>
+                    <h6 className=" text-light ">Decrement</h6>
                 </button>
                 <div>
                 <ButtonClickClass/>
                 </div>
                 <div>
-                <Button/>
+                <ButtonClickToChange/>
+                </div>
+                <div>
+                    <Clock/>
                 </div>
                
             </div>

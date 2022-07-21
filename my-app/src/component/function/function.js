@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import ButtonChange from './buttonChange';
 import ButtonClickFun from './ButtonClickToPrint';
+import Clock1 from './date';
+
 // const FunctionCom=()=> {
     function FunctionCom() {
 
@@ -48,7 +50,9 @@ import ButtonClickFun from './ButtonClickToPrint';
             <div>
              <ButtonChange/>
             </div>
-          
+          <div>
+            <Clock1/>
+          </div>
         </div>
     );
 }
