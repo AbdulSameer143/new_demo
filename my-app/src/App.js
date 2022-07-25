@@ -5,7 +5,7 @@ import './App.css';
 //first install {npm install react-bootstrap bootstrap}then i added few lines in import commend: 
 
 import {Button} from 'react-bootstrap';
-import { FunctionCom,ClassCom,ReactProps } from './component';
+import { FunctionCom,ClassCom,ReactProps, ClsFormPgm,FunFormPgm} from './component';
 
 
    
@@ -18,12 +18,15 @@ function App() {
       <Button variant="primary" >Example Bootstrap Button</Button>
       <div className='col-12 d-flex'>
         <div className='col-6' style={{borderRight: "double"}}>
-          <FunctionCom />
+        <FunctionCom />
+        <FunFormPgm/>
         </div>
         <div className='col-6'>
-          <ClassCom />
+        <ClassCom />
+        <ClsFormPgm/>
         </div>
       </div>
+
       <ReactProps name="'ReactProps'"/>
     </div>
   );
