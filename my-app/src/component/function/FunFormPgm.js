@@ -35,18 +35,38 @@ function FunFormPgm(){
       <div>
 
         <Form onSubmit={handleSubmit}>
-          <div>
-            <label>Name</label>
-            <input type="text" onChange={UserVal} />
-            <div><h6>{user}</h6></div>
+          <div style={{
+                display:"flex",
+                fontWeight:"bold",
+                justifyContent:"center"
+
+          }}>
+          <div >
+            <label  style={{padding:"6px",fontSize:"20px"}}>Name</label>
+            <input style={{ fontWeight:"bold"}} type="text" onChange={UserVal} />
+            <div style={{
+                       margin: "2px",
+                       padding: "2px",
+                       height: "30px"
+            }}><h6>{user}</h6></div>
           </div>
           <div>
-            <label>Find</label>
-            <input type="text" maxLength={1} onChange={FindVal} />
-            <div><h6>{find}</h6></div>
+            <label style={{padding:"6px",fontSize:"20px"}}>Find</label>
+            <input style={{
+                      width:"20px",
+                      fontWeight:"bold",
+                 
+            }}
+            type="text" maxLength={1} onChange={FindVal} />
+            <div style={{
+                       margin: "2px",
+                       padding: "2px",
+                       height: "30px"
+            }}><h6>{find}</h6></div>
+          </div>
           </div>
           <div>
-            <input type="submit" onClick={splitter} />
+            <input className='fw-bold' type="submit" onClick={splitter} />
           </div>
         </Form>
       </div>
